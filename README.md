@@ -1,4 +1,47 @@
-### Backend is being developed in FastAPI.
+# Backend
+
+This repository contains the backend application built with [FastAPI](https://fastapi.tiangolo.com/), a modern, high-performance web framework for building APIs with Python 3.8+.
+
+
+## Create a Virtual Environment
+
+It’s recommended to create a virtual environment to isolate dependencies:
+
+```bash
+python -m venv env
+env\Scripts\activate  
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running the Application
+
+To start the FastAPI application in development mode:
+
+1. Navigate to the `backend/app` directory:
+
+   ```bash
+   cd backend/app
+   ```
+
+2. Run the application using `uvicorn`:
+
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+   The server will be running at `http://127.0.0.1:8000/` by default.
+
+## API Documentation
+
+FastAPI provides interactive API documentation using both Swagger UI and Redoc. Once the app is running, you can access the documentation:
+
+- **Swagger UI**: `http://127.0.0.1:8000/docs`
+- **ReDoc**: `http://127.0.0.1:8000/redoc`
 
 #### Example structure files:
 ```
@@ -138,3 +181,7 @@ lib/
 └── routes.dart
 ```
 [Inspiration](https://chatgpt.com/share/66e885c3-27a0-8005-9d90-84dc21ff4572)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
